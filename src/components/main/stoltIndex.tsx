@@ -2,6 +2,7 @@ import * as React from 'react'
 import bottle from '../../assets/bottle.jpg';
 import wines from '../../assets/wines.png';
 
+
 class Stolt extends React.Component {
     public render() {
         return (
@@ -31,14 +32,12 @@ class Stolt extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="jumbotron jumbAreaThree text-center">
+                <div className="container jumbAreaThree text-center">
                 <img className="img-fluid" src={wines} width=""/>
-                    <h5>STOLTEN-HOLM VIN</h5>
-                    <p>
-                        <span>info@stolten-holm.dk</span><br/>
-                        <span>+45 27 81 60 78
-                        </span>
-                    </p>
+                    <div>
+                        <h5>STOLTEN-HOLM VIN</h5>
+                        <p>info@stolten-holm.dk<br/>+45 27 81 60 78</p>
+                    </div>
                 </div>
             </div>
         );
