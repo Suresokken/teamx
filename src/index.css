@@ -1,31 +1,62 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background-image: url("assets/ba.jpg");
-  color: rgb(245, 202, 202);
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url("assets/ba.jpg");
+    color: rgb(245, 202, 202);
 }
 
 .imgBottle {
- height: 100%;
- width: 50%;
- object-fit: cover;
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
 }
 
 .jumbAreaOne {
-  background-color: #3c191d;
+    margin-top: 20px;
+    background-color: #3c191d;
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
 }
 
 .jumbAreaTwo {
-  background-color: #60282e;
+    background-color: #60282e;
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
 }
 .jumbAreaThree {
-  background-color: #843640;
-  padding: 10px;
+    background-color: #843640;
+    padding: 10px;
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
 }
 
 .kashuan {
-  font-family: 'Kaushan Script', cursive;
+    font-family: 'Kaushan Script', cursive;
 }
 
+.navbar {
+    background-color: #843640;
+    border-radius: 10px;
+    color: rgb(245, 202, 202);
+    -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+}
 
+.btn-info {
+    margin: 5px;
+    background-color: #3c191d;
+    border-color: #3c191d;
+    color: rgb(245, 202, 202);
+    min-width: 75px;
+    -webkit-box-shadow: 5px 5px 2px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 2px 0 rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 2px 0 rgba(0,0,0,0.75);
+}
