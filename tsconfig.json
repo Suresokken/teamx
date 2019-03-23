@@ -2,11 +2,11 @@
   "compilerOptions": {
     "baseUrl": ".",
     "outDir": "build/dist",
-    "module": "es6",
+    "module": "commonjs",
     "target": "es5",
-    "lib": ["es6", "dom"],
+    "lib": ["es6", "dom", "es2015"],
     "sourceMap": true,
-    "allowJs": false,
+    "allowJs": true,
     "declaration": false,
     "jsx": "react",
     "moduleResolution": "node",
@@ -20,6 +20,7 @@
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": false,
     "experimentalDecorators": true,
+    "pretty": true,
   },
   "exclude": [
     "node_modules",

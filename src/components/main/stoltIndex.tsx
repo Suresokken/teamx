@@ -1,8 +1,49 @@
 import * as React from 'react'
-import bottle from '../../assets/bottle.jpg';
-import wines from '../../assets/wines.png';
 
+import CenterPartOne from './centerPartOne'
+import CenterPartTwo from './centerPartTwo'
+import CenterPartThree from './centerPartThree'
+import CenterPartFour from './centerPartFour'
+import CenterPartFive from './centerPartFive'
+import CenterPartSix from './centerPartSix'
+import CenterPartSeven from './centerPartSeven'
+import CenterPartEight from './centerPartEight'
+
+
+import {observer} from 'mobx-react';
+import MainStore from 'src/stores/mainStore';
+
+@observer
 class Stolt extends React.Component {
+
+    public getRender = () : any => {
+        if (MainStore.renderMethod === "home") {
+            return <CenterPartOne/>
+        }
+        if (MainStore.renderMethod === "wineOne") {
+            return <CenterPartTwo/>
+        }
+        if (MainStore.renderMethod === "wineTwo") {
+            return <CenterPartThree/>
+        }
+        if (MainStore.renderMethod === "wineThree") {
+            return <CenterPartFour/>
+        }
+        if (MainStore.renderMethod === "wineFour") {
+            return <CenterPartFive/>
+        }
+        if (MainStore.renderMethod === "wineFive") {
+            return <CenterPartSix/>
+        }
+        if(MainStore.renderMethod == "wineSix") {
+            return <CenterPartSeven />
+        }
+        if(MainStore.renderMethod == 'wineSeven'){
+            return <CenterPartEight />
+        }
+        return <div>test</div>
+    }
+
     public render() {
         return (
             <div>
@@ -10,42 +51,14 @@ class Stolt extends React.Component {
                     <div className="jumbotron jumbAreaOne">
                         <h1 className="display-4 text-center font-weight-bold">STOLTEN-HOLM VIN</h1>
                         <h2 className="display-8 text-center font-italic kashuan">A part of Stoltenborg Invest</h2>
-                        <hr/>
                     </div>
-
-                    <div className="jumbotron jumbAreaTwo">
-                        <div className="row">
-                            <div className="col-2 text-center">
-                                <img className="imgBottle" src={bottle}/>
-                            </div>
-                            <div className="col-8 text-center">
-                                <h4>Velkommen til Stolten-Holm Vin</h4>
-                                <p>STOLTEN-HOLM VIN importerer udelukkende eksklusive vine fra vinhuset COLLAZZI.<br/>
-                                    Vi går ikke på kompromis med kvalitet, og er kompromisløse i vores jagt på
-                                    perfektion.</p>
-                                <hr/>
-                                <p className="text-left">Collazzi Winery ligger i smukke omgivelser lige udenfor
-                                    Firenze i Toscana sammen med en olivenlund med 19.000 oliventræer, en citronlund
-                                    og adskillige vinmarker på skråninger og terrasser i området.<br/>
-                                    Produkterne fra Collazzi er i særklasse og af højeste kvalitet, hvor
-                                    kældermesteren er kendt for hellere at hælde store mængder vin ud end at sælge
-                                    sekundær kvalitet.<br/>
-                                    Hovedhuset ”The Collazzi Villa” er opført over en 16 års periode i det 16.
-                                    århundrede og både møbler er designet og malerierne i huset tegnet af Michel
-                                    Angelo. Stolten-Holm sælger produkterne fra Collazzi eksklusivt i Danmark.
-                                </p>
-                            </div>
-                            <div className="col-2 text-center">
-                                <img className="imgBottle" src={bottle}/>
-                            </div>
-                        </div>
-                    </div>
+                    {this.getRender()}
                 </div>
                 <div className="container jumbAreaThree text-center">
-                    <img className="img-fluid" src={wines} width=""/>
+                    <img className="img-fluid wines" src={require('../../assets/wines.png')} width=""/>
                     <div>
-                        <h5>STOLTEN-HOLM VIN</h5>
-                        <p>info@stolten-holm.dk<br/>+45 27 81 60 78</p>
+                        <h5 className="display-8">STOLTEN-HOLM VIN</h5>
+                        <p>info@stolten-holm.dk<br/>+45 27 81 60 78 / +45 27 81 18 73</p>
                     </div>
                 </div>
             </div>

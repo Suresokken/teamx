@@ -4,21 +4,24 @@ body {
     font-family: sans-serif;
     background-image: url("assets/ba.jpg");
     color: rgb(245, 202, 202);
+    height: auto;
 }
 
 .imgBottle {
-    height: 100%;
-    width: 50%;
+    height: auto;
+    width: 62%;
     object-fit: cover;
 }
 
 .jumbAreaOne {
-    margin-top: 20px;
+    margin-top: 15px;
     background-color: #3c191d;
     border-radius: 20px;
     -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+    height: 30%;
+    padding: 40px !important;
 }
 
 .jumbAreaTwo {
@@ -27,14 +30,18 @@ body {
     -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+    height: 50%;
+    padding: 30px !important;
 }
 .jumbAreaThree {
     background-color: #843640;
-    padding: 10px;
+    padding: 10px !important;
     border-radius: 20px;
     -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+    margin-bottom: 20px;
+    height: 20%;
 }
 
 .kashuan {
@@ -59,4 +66,39 @@ body {
     -webkit-box-shadow: 5px 5px 2px 0 rgba(0,0,0,0.75);
     -moz-box-shadow: 5px 5px 2px 0 rgba(0,0,0,0.75);
     box-shadow: 5px 5px 2px 0 rgba(0,0,0,0.75);
+    border-radius: 10px; 
+}
+
+.wines {
+    margin-bottom: 10px;
+}
+.popout {
+    background-color: #60282e;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    border: 1px dotted black;
+    padding-left: 10px;
+}
+
+.showWine{
+    margin-top: 5%; 
+    max-height: 60% !important;
+}
+
+.infoArea {
+    padding-top: 5%; 
+    max-height: fit-content;
+}
+
+.dropBtn {
+    float: left;
+}
+
+.show {
+    background: #a84551;
+   
+}
+.dropdown-item{
+     color: rgb(245, 202, 202);
 }
