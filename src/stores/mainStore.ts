@@ -91,7 +91,7 @@ export class MainStore {
     }
     @action
     public loadData() {
-		fetch('https://gracious-knuth-1a58ef.netlify.com/.netlify/functions/server/wines')
+		fetch('http://gracious-knuth-1a58ef.netlify.com/.netlify/functions/server/wines')
 			.then(response => response.json())
 			.then(data => {
 				console.log(data)
