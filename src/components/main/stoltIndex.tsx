@@ -12,12 +12,14 @@ import CenterPartEight from './centerPartEight'
 
 import {observer} from 'mobx-react';
 import MainStore from 'src/stores/mainStore';
+import mainStore from 'src/stores/mainStore';
 
 @observer
 class Stolt extends React.Component {
 
     public getRender = () : any => {
         if (MainStore.renderMethod === "home") {
+            mainStore.loadData();
             return <CenterPartOne/>
         }
         if (MainStore.renderMethod === "wineOne") {

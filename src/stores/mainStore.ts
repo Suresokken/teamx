@@ -89,6 +89,15 @@ export class MainStore {
     public getRender = () : string => {
         return this.renderMethod;
     }
+    @action
+    public loadData() {
+		fetch('https://gracious-knuth-1a58ef.netlify.com/.netlify/functions/server/wines')
+			.then(response => response.json())
+			.then(data => {
+				console.log(data)
+		})
+			.catch(err => console.error("", err.toString()))
+	}
     
 }
 
